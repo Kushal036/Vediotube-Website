@@ -1,8 +1,14 @@
+// require('dotenv').config({path : './env'}) //used in type common js but here we have to use module js 
+import dotenv from 'dotenv'
+dotenv.config({
+    path:  './env'
+})
+
 import mongoose from "mongoose";
-import {DB_NAME} from './constants'
 
+import connectDB from './db/index.js'
 
-
+connectDB()
 
 
 
